@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.container .contactos {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: fit-content;
+    /* OJO CON ESTO TAL VEZ USAR min-width: px; */
+    height: 100vh;
+    border-right: solid 2px #e5e5e5;
+    /* background-color: red; */
+}
+
+
+.container .contactos .estado {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    flex: 1 5 0;
+    justify-content: space-evenly;
+    /* border: solid 2px #e5e5e5; */
+}
+
+.container .contactos .estado .activo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px #e5e5e5;
+    margin: 0;
+}
+
+.container .contactos .estado .activo .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-grow: 2; */
+    flex: 2 5 0;
+    margin: 10px;
+    /* border: solid 1px red; */
+}
+
+.container .contactos .estado .activo .avatar {
+    display: flex;
+    /* flex-grow: 1; */
+    flex: 1 5 0;
+    justify-content: center;
+    margin: 0;
+    /* border: solid 1px red; */
+
+}
+
+.container .contactos .estado .activo .texto {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-between;
+    /* border: solid 1px red; */
+}
+
+.container .contactos .estado h3 {
+    margin: 4px;
+}
+
+.container .contactos .estado p {
+    margin: 4px;
+}
+
+.container .contactos .estado .activo p {
+    color: #b3b4b4;
+}
+
+.container .contactos .estado .activo .icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 10px 0px 10px 20px;
+    color: #b3b4b4;
+    /* border: solid 1px red; */
+}
+
+.container .contactos .estado .activo .icons a {
+    text-decoration: none;
+    color: #b3b4b4;
+}
+
+.container .contactos .estado .activo .icons #icon1:hover {
+    color: purple;
+    transition: .5s;
+}
+
+.container .contactos .estado .activo .icons #icon2:hover {
+    color: purple;
+    transition: .5s;
+}
+
+.container .contactos .estado .activo .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    border-bottom: solid 2px #e5e5e5;
+}
+
+.boton a {
+    text-decoration: none;
+}
+
+.boton a:hover p {
+    background-color: purple;
+    transition: .5s;
+}
+
+.boton p {
+    background-color: #a491d3;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+.container .contactos .estado .inactivo .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-grow: 0; */
+    flex: 0 5 0;
+    margin: 0;
+    border-bottom: solid 2px #e5e5e5;
+    /* border: solid 1px red; */
+}
+
+.container .contactos .estado .inactivo .user .avatar {
+    /* flex-grow: 0; */
+    flex: 0 0 5;
+    margin: 15px;
+    /* border: solid 1px red; */
+}
+
+.container .contactos .estado .inactivo .user .texto {
+    /*  display: flex; */
+    /* flex-grow: 5; */
+    flex: 5 1 0;
+}
+
+.container .contactos .estado .inactivo .user .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.contenido {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 5 0;
+}
+
+.contenido .manos {
+    /* border: solid 1px red; */
+    margin-bottom: 17px;
+
+}
+
+.contenido .manos img {
+    width: 300px;
+    /* max-width: fit-content; */
+    height: 300px;
+}
+
+.contenido .texto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+}
+
+.contenido .texto2 h1 {
+    font-weight: normal;
+    font-size: 55px;
+    margin-bottom: 7px;
+}
+
+.contenido .texto2 p {
+    /* border: solid 1px red; */
+    max-width: 55%;
+    text-align: center;
+}
